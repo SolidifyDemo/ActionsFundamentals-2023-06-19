@@ -11,7 +11,11 @@ jobs:
    steps:
     - name: "Echo hello"
       run: echo "Hello" 
-
+    - name: "Setup dotnet"  
+    
+      uses: xt0rted/setup-dotnet@v1.5.0
+      with:
+        dotnet-version: "7.0.x"
   
     
     
